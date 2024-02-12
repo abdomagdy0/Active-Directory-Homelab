@@ -17,13 +17,18 @@ In this lab, we will  walk through how you can create an active Directory home l
 - <b>Windows Server 2019</b>
 
 <h2> walk-through:</h2>
-![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/30051216-0967-472b-8590-32f762a9ab40)
-
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br /></p>
+our goal is to create the windows server Virtual Machine which will become our domain controller, give it two network adapters one of which is going to be used to connect to the internal network, and the other one will be used to connect to the outside network (internet), once that's done were going to sign IP Adressing for the internal network, Configure NAT, Routing, and DHCP on the Domain controller so the clients on the private network can get automatic IP Adressesing and browse the internet through the Domain Controller.step two is to rename the server and Setup Active Directory, and lastly create multiple users with a Powershell script.
+ 
+Here is a diagram of how the lab should look like
 
+ ![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/1e703464-f594-4157-8592-cf152fe0438e)
+
+</p>
+Virtual Box:
+go to https://www.virtualbox.org/wiki/Downloads and select the latest version for your Operating system
+
+![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/4c298c27-72bc-4fc1-abab-18c2fc6c2142)
 
 <!--
  ```diff
