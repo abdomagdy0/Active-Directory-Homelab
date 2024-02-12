@@ -1,4 +1,4 @@
-![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/183552bd-4928-4b1e-9cff-7413cb0632bb)![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/e3b9d113-f832-4284-89a0-c7c9e6519fb2)<h1>Active Directory homelab</h1>
+<h1>Active Directory homelab</h1>
 <h2>Description</h2>
 In this lab, we will  walk through how you can create an active Directory home lab Environment using Virtual Box. Configuring and running this lab will definetly help develop your understanding of how active directory and widnows networking works, so i'd highly suggest creating your own AD home lab.
 <br />
@@ -38,8 +38,12 @@ you need to select the one with desktop environment, create custom install and c
 
 <P> Install Guest Additions to make the experience more fluid</P>
 let it install and reboot your machine.
+<p>Now let's setup the internal NIC.
+go to Settings -> network -> Change adapters settings.
+ check which one has a normal IP address for example 10.10.24.3, this one is automatically assigned by the home router. and the second adapter was unable to connect to a DHCP server to get an IP, which is gonna be assigned by us later with the domain controller.select properties -> ipv4 
+rename Ethernet to Internet and Ethernet 2 to Internal</p>
 
-
+next we gonna rename the pc, click on start and system, click rename this pc, we will just name it DC which stands for doamin controller. Restart Your Vm and login with Input CTRL Alt del.
 
  
  
