@@ -23,27 +23,29 @@ Here is a diagram of how the lab should look like
 ![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/d411822f-46d0-4d85-b417-0072864e7c00)
 </p>
 <b>Virtual Box:</b>
-<p>go to https://www.virtualbox.org/wiki/Downloads ,and choose the latest version for your Operating system.
+<p> Go to https://www.virtualbox.org/wiki/Downloads, and choose the latest version for your Operating system.
  <p>Install and open VB, then click on the add icon and select the server iso. </p>
  </p
-once you install virtualbox, create a new machine.
+   <b>Windows Machines</b>
+  <p> go to https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019 and select the iso 64bit version </p>
+once you install Virtualbox, create a new machine.
 
 ![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/84115a56-a759-47a0-a16a-68c88567f271)
-<p>make sure to set around 2gbs of ram at minimum for Windows server as anything less would not run, I prefer 4-8gbs, and set max cpu cores for your cpu to make the installation process faster. </p>
+<p> Make sure to set around 2gbs of RAM at minimum for the Windows server as anything less would not run, I prefer 4-8gbs and set max CPU cores to make the installation process faster. </p>
 
-you need to select the one with desktop environment, create custom install and click next, let it install.
+you need to select the one with the desktop environment, create a custom install, and click next, to let it install.
 ![image](https://github.com/abdomagdy0/Active-Directory-Homelab/assets/91535529/d0068d2f-c345-4fb6-a6ea-77b012f17921)
 
-<p> repeat the process for the windows 10 VM</p>
+<p> Repeat the process for the Windows 10 VM</p>
 
 <P> Install Guest Additions to make the experience more fluid</P>
 let it install and reboot your machine.
 <p>Now let's setup the internal NIC.
 go to Settings -> network -> Change adapters settings.
  check which one has a normal IP address for example 10.10.24.3, this one is automatically assigned by the home router. and the second adapter was unable to connect to a DHCP server to get an IP, which is gonna be assigned by us later with the domain controller.select properties -> ipv4 
-rename Ethernet to Internet and Ethernet 2 to Internal</p>
-
-next we gonna rename the pc, click on start and system, click rename this pc, we will just name it DC which stands for doamin controller. Restart Your Vm and login with Input CTRL Alt del.
+rename Ethernet to Internet and Ethernet 2 to Internal</p> 
+<a href="//imgur.com/a/O88oF0c"></a>
+next, we gonna rename the pc, click on start and system, click rename this pc, we will just name it DC which stands for domain controller. Restart Your VM and login with Input CTRL Alt del.
 
  
  
