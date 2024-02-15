@@ -47,9 +47,11 @@ rename Ethernet to Internet and Ethernet 2 to Internal</p>
 <a href="//imgur.com/a/O88oF0c"></a>
 next, we gonna rename the pc, click on start and system, click rename this pc, we will just name it DC which stands for domain controller. Restart Your VM and login with Input CTRL Alt del.
 
- 
- 
 
+<p>Adding admin user </p>
+Now we will add alot of users using a powershell script https://codeload.github.com/joshmadakor1/AD_PS/zip/refs/heads/master
+PS: you have to run Powershell as admin
+https://imgur.com/a/O88oF0c
 <!--
  ```diff
 - text in red
