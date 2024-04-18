@@ -44,7 +44,7 @@ let it install and reboot your machine.
 go to Settings -> network -> Change adapters settings.
  check which one has a normal IP address for example 10.10.24.3, this one is automatically assigned by the home router. and the second adapter was unable to connect to a DHCP server to get an IP, which is gonna be assigned by us later with the domain controller.select properties -> ipv4 
 rename Ethernet to Internet and Ethernet 2 to Internal</p> 
-<a href="//imgur.com/a/O88oF0c"></a>
+
 next, we gonna rename the pc, click on start and system, click rename this pc, we will just name it DC which stands for domain controller. Restart Your VM and login with Input CTRL Alt del.
 
 
